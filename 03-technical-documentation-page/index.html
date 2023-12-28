@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Language Mastersheet</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="brand">
+        <img class="logo" src="https://i.postimg.cc/3RrytdDP/logo.png" alt="python logo">
+        <header>Python Language Mastersheet</header>
+      </div>
+      <ul>
+        <li class="link">
+          <a class="nav-link" href="#intro">intro</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#python_building_blocks">python building blocks</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#variables">variables</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#data_types">data types</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#functions_and_methods">functions <span>and</span> methods</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#control_flow">control flow</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#loops">loops</a>
+        </li>
+        <li class="link">
+          <a class="nav-link" href="#practice">practice</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="intro" class="main-section">
+          <header class="header">intro</header>
+          <p>Learning to code is not easy.</p>
+          <p>If it were, we’d all be able to learn to code and get high-paying jobs effortlessly, and therefore through the laws of supply and demand, the field would become oversaturated and hence no longer lucrative.</p>
+          <p>But, everyone can do it, as long as you’ve got the correct tools, resources, and guidance. This is why this guide is created for you to have the foundations you need on hand at all times.</p>
+          <p>But, one thing need to be emphasized:</p>
+          <blockquote class="quote">Programming is not about memorizing every concept by heart.<br/>It is about understanding the fundamentals and then learning the rest as you go.</blockquote>
+          <p>To learn to code and get hired as fast as possible, any learner need at least 5 things:</p>
+          <ol>
+            <li>A solid understanding of programming fundamentals</li>
+            <li>The right mindset and understanding of what makes a great developer</li>
+            <li>Lots of practice</li>
+            <li>Projects builded using the above 3 to showcase skills and get hired</li>
+            <li>Never Give Up - Keep Learning - Keep Growing</li>
+          </ol>
+          <p>Some people have gone from no writing a single line of code in their entire life to getting hired as self-taught developer.</p>
+          <p>If they did it, everyone can do it too.</p>
+          <p>The main thing to keep in mind is to develop our grit and a growing mindset to keep pushing yourselves out of the boundaries or out of our comfort zone.</p>
+          <p>Always learn, until the concepts fit in your mind. Focus on fundamentals and trying to work on Data Structures and Algorithms (DSA) through <a href="https://leetcode.com/" target="_blank">Leetcode</a> or an equivalent web app can help mastering the fundamentals.</p>
+          <p>Another good advice is to no compare yourself to anyone else, except to whom you was yesterday, and enjoy your everyday efforts and improvements.</p>
+          <p>And one more time again, <span>NEVER GIVE UP!</span></p>
+      </section>
+
+      <section id="python_building_blocks" class="main-section">
+          <header class="header">python building blocks</header>
+          <p>What is Programming?</p>
+          <p>Before we start, we need to first understand what programming is.</p>
+          <p>Programming is the process of creating software or applications that can perform specific tasks. It involves writing code, which is a set of instructions that a computer can understand and execute.</p>
+          <p>Think of it like giving a set of instructions to a robot to perform a certain task. The robot can only do what it has been programmed to do, and programming is the process of creating instructions for the computer to follow.</p>
+          <p>Programming can be broken down into 5 core building blocks. Knowing these is not enough, but they are the foundation everything else is built upon.</p>
+          <p>In the sections below are summaries of all these 5 building blocks.</p>
+      </section>
+
+      <section id="variables" class="main-section">
+          <header class="header">variables</header>
+          <p>In Python, a variable is a named reference to a value that can be stored in the computer's memory. When we assign a value to a variable, we are telling the computer to reserve a portion of its memory to store that value, and to associate that value with the variable name.</p>
+          <pre class="brush: python" style="margin: 0; padding: 0;">
+            <code class="block">
+              x = 5
+              y = "Hello, world!"
+              z = [1, 2, 3, 4]
+              student = {"name": "John", "age": 25}
+            </code>
+          </pre>
+          <p>For example, in the code block above, the line <code>x = 5</code> creates a variable named <code>x</code> and assigns it the value <code>5</code>. The computer reserves a portion of its memory to store the value <code>5</code>, and associates that value with the variable name <code>x</code>.</p>
+          <p>When we refer to a variable later in our code, Python looks up the value associated with that variable name in memory, and uses that value in our code. For example, if we later write <code>y = x + 2</code>, Python will look up the value associated with the variable name <code>x</code> (which is <code>5</code>), add <code>2</code> to it, and then store the result in a new variable named <code>y</code>.</p>
+          <p>It's important to note that variables are not the same as the values they store. When we assign a value to a variable, we are telling the computer to reserve memory for that value and associate it with the variable name. If we later assign a new value to that same variable, the old value is not deleted or overwritten - it is simply "forgotten", and the variable is associated with the new value instead.</p>
+          <p>Overall, understanding how variables work is important for understanding how Python (and other programming languages) manage and manipulate data in computer memory.</p>
+          <p>In the examples above, <code>x</code> is a variable that stores the integer value <code>5</code>, <code>y</code> is a variable that stores the string value <code>"Hello, world!"</code>, <code>z</code> is a variable that stores a list of integers, and <code>student</code> is a variable that stores a dictionary with two key-value pairs.</p>
+          <p>You can also perform operations with variables, for example:</p>
+          <pre class="brush: python">
+            <code class="block">
+              a = 10
+              b = 20
+              c = a + b
+              print(c)
+            </code>
+          </pre>
+      </section>
+
+      <section id="data_types" class="main-section">
+          <header class="header">data types</header>
+          <p>In Python, several built-in data types can be used to represent different kinds of data. Here are some of the most common data types:</p>
+          <p>- Numbers: Python supports different types of numbers, including integers (<code>int</code>), floating point numbers (<code>float</code>), and complex numbers (<code>complex</code>). Examples:</p>
+          <pre class="brush: python">
+            <code class="block">
+              x = 5          # integer
+              y = 3.14       # float
+              z = 2 + 3j     # complex
+            </code>
+          </pre>
+          <p>- Strings: A string is a sequence of characters. In Python, strings can be enclosed in single quotes (<code>'...'</code>) or double quotes (<code>"..."</code>). Examples:</p>
+          <pre class="brush: python">
+            <code class="block">
+              s1 = 'Hello, world!'
+              s2 = "Python is awesome"
+            </code>
+          </pre>
+          <p>- Lists: A list is a collection of values that are ordered and mutable (i.e., can be changed). In Python, lists are enclosed in square brackets (<code>[...]</code>). Examples:</p>
+          <pre class="brush: python">
+            <code class="block">
+              my_list = [1, 2, 3, 4, 5]
+              my_list2 = ["apple", "banana", "cherry"]
+            </code>
+          </pre>
+          <p>- Tuples: A tuple is a collection of values that are ordered and immutable (i.e., cannot be changed). In Python, tuples are enclosed in parentheses (<code>(...)</code>). Examples:</p>
+          <pre class="brush: python">
+            <code class="block">
+              my_tuple = (1, 2, 3, 4, 5)
+              my_tuple2 = ("apple", "banana", "cherry")
+            </code>
+          </pre>
+          <p>- Dictionaries: A dictionary is a collection of key-value pairs that are unordered and mutable. In Python, dictionaries are enclosed in curly braces (<code>{...}</code>). Examples:</p>
+          <pre class="brush: python">
+            <code class="block">
+              dict1 = {"name": "John", "age": 25, "city": "Douala"}
+              dict2 = {"apple": 1, "banana": 2, "cherry": 3}
+            </code>
+          </pre>
+          <p>- Boolean: A Boolean value is either <code>True</code> or <code>False</code>. In Python, Boolean values are used for logical operations and conditions. Examples:</p>
+          <pre class="brush: python">
+            <code class="block">
+              x = True
+              y = False
+            </code>
+          </pre>
+          <p>These are just a few examples of the most common data types in Python. Understanding data types is important for programming in Python, as it allows you to manipulate data in different ways depending on the type of data you are working with.</p>
+      </section>
+
+      <section id="functions_and_methods" class="main-section">
+          <header class="header">functions and methods</header>
+          <p>In Python, a function is a block of code that performs a specific task. Functions are used to organize code into reusable blocks, which can be called multiple times throughout a program. In Python, functions are defined using the <code>def</code> keyword, followed by the function name and any arguments the function takes.</p>
+          <p>Here is an example of a simple function that takes two arguments and returns their sum:</p>
+          <pre class="brush: python">
+            <code class="block">
+              def add_numbers(x, y):
+                result = x + y
+                return result
+            </code>
+          </pre>
+          <p>In this function, <code>x</code> and <code>y</code> are the arguments that are passed to the function when it is called. The function then adds these two numbers together and stores the result in a variable named <code>result</code>. Finally, the function returns the value of <code>result</code>.</p>
+          <p>To call this function, we simply use the function name followed by the arguments in parentheses:</p>
+          <pre class="brush: python">
+            <code class="block">
+              print(add_numbers(3, 5))
+            </code>
+          </pre>
+          <p>This code will output <code>8</code>, which is the result of calling the <code>add_numbers</code> function with arguments <code>3</code> and <code>5</code>.</p>
+          <p>In Python, a method is a function that is associated with an object. Methods are similar to functions in that they perform a specific task, but they are called on an object instead of being called independently. Methods are defined in the same way as functions, but they are called using the dot notation.</p>
+          <p>Here is an example of a method that is associated with a list object:</p>
+          <pre class="brush: python">
+            <code class="block">
+              my_list = [1, 2, 3, 4, 5]
+              my_list.reverse()
+              print(my_list)
+            </code>
+          </pre>
+          <p>In this code, we create a list object named <code>my_list</code> that contains the values <code>[1, 2, 3, 4, 5]</code>. We then call the <code>reverse</code> method on the <code>my_list</code> object, which reverses the order of the list in place (i.e., without creating a new list). Finally, we print the contents of <code>my_list</code>, which now contains the values <code>[5, 4, 3, 2, 1]</code>.</p>
+      </section>
+
+      <section id="control_flow" class="main-section">
+          <header class="header">control flow</header>
+            <p>Control flow refers to the order in which code is executed in a program. In Python, control flow is controlled using conditional statements (<code>if</code>, <code>elif</code>, and <code>else</code>) and loops (<code>for</code> and <code>while</code>).</p>
+            <p class="ptag">Conditional Statements</p>
+            <p>Conditional statements are used to execute different code blocks
+              based on whether certain conditions are true or false. The basic
+              syntax for an <code>if</code> statement in Python is:</p>
+          <pre class="brush: python">
+            <code class="block">
+              if condition:
+                # code to execute if condition is True
+            </code>
+          </pre>
+          <p>The <code>condition</code> can be any expression that evaluates to a Boolean value (<code>True</code> or <code>False</code>). If the <code>condition</code> is <code>True</code>, the code block following the <code>if</code> statement will be executed. If the <code>condition</code> is <code>False</code>, the code block will be skipped.</p>
+          <p>Here is an example:</p>
+          <pre class="brush: python">
+            <code class="block">
+              x = 5
+
+              if x > 0:
+                print("x is positive")
+            </code>
+          </pre>
+          <p>In this example, the <code>condition</code> is <code>x > 0</code>. Since <code>x</code> is equal to <code>5</code>, which is greater than <code>0</code>, the code block following the <code>if</code> statement will be executed, and the output will be <code>x is positive</code>.</p>
+          <p>You can also use <code>elif</code> and <code>else</code> statements to execute different
+            code blocks based on multiple conditions. The basic syntax for an
+            <code>if</code>/<code>elif</code>/<code>else</code> statement in Python is:</p>
+          <pre class="brush: python">
+            <code class="block">
+              if condition1:
+                # execute if condition1 is True
+              elif condition2:
+                # execute if condition1 is False and condition2 is True
+              else:
+                # execute if both condition1 and condition2 are False
+            </code>
+          </pre>
+          <p>Here is an example:</p>
+          <pre class="brush: python">
+            <code class="block">
+              x = 5
+
+              if x < 0:
+                print("x is negative")
+              elif x == 0:
+                print("x is zero")
+              else:
+                print("x is positive")
+            </code>
+          </pre>
+            <p>In this example, the <code>condition1</code> is <code>x < 0</code>, the <code>condition2</code> is <code>x == 0</code>, and the <code>else</code> statement covers any other cases. Since <code>x</code> is equal to <code>5</code>, which is greater than <code>0</code>, the <code>condition1</code> is <code>False</code>. The <code>condition2</code> is also <code>False</code>, so the <code>else</code> statement will be executed, and the output will be <code>x is positive</code>.</p>
+      </section>
+
+      <section id="loops" class="main-section">
+          <header class="header">loops</header>
+          <p>In Python, loops are used to execute a set of statements repeatedly until a specific condition is met. There are two types of loops in Python: <code>for</code> loop and <code>while</code> loop.</p>
+          <p class="ptag">For Loop</p>
+          <p>A <code>for</code> loop is used to iterate over a sequence (a string, a list, a tuple, a set, or a dictionary). The syntax of a <code>for</code> loop is as follows:</p>
+          <pre class="brush: python">
+            <code class="block">
+              for {variable} in {sequence}:
+                {statement(s)}
+            </code>
+          </pre>
+          <p>Here, <code>variable</code> is the iteration variable that takes on the value of the next element in <code>sequence</code> each time the loop runs. The <code>{statement(s)}</code> block is executed once for each item in <code>sequence</code>.</p>
+          <p>For example, the following code prints each item in a list:</p>
+          <pre class="brush: python">
+            <code class="block">
+              fruits = ["apple", "banana", "cherry"]
+              for x in fruits:
+                print(x)
+            </code>
+          </pre>
+          <p class="ptag">Using range() with a For Loop</p>
+          <p>The <code>range()</code> function in Python is often used in combination with a <code>for</code> loop to perform an action a specific number of times. The <code>range()</code> function generates a sequence of numbers, which can be used as the sequence for the <code>for</code> loop to iterate over.</p>
+          <p>Here is an example:</p>
+          <pre class="brush: python">
+            <code class="block">
+              for i in range(5):
+                print(i)
+            </code>
+          </pre>
+          <p>In this example, the <code>for</code> loop will print the numbers 0 through 4, because <code>range(5)</code> generates the sequence of numbers [0, 1, 2, 3, 4].</p>
+          <p>You can also specify a step value to skip numbers in the sequence.
+            The syntax for this is <code>range(start, stop, step)</code>. Here is an
+            example:</p>
+          <pre class="brush: python">
+            <code class="block">
+              for i in range(0, 10, 2):
+                print(i)
+            </code>
+          </pre>
+          <p>In this example, the <code>for</code> loop will print the numbers 0, 2, 4, 6, and 8, because <code>range(0, 10, 2)</code> generates the sequence of numbers [0, 2, 4, 6, 8].</p>
+          <p class="ptag">While Loop</p>
+          <p>A <code>while</code> loop is used to execute a block of code repeatedly as long
+            as a certain condition is true. The syntax of a <code>while</code> loop is as
+            follows:</p>
+          <pre class="brush: python">
+            <code class="block">
+              while {condition}:
+                {statement(s)}
+            </code>
+          </pre>
+          <p>Here, <code>{condition}</code> is tested before each iteration of the loop. If it is true, the <code>{statement(s)}</code> block is executed. This process repeats until the <code>{condition}</code> is false.</p>
+          <pre class="brush: python">
+            <code class="block">
+              i = 0
+              while i < 5:
+                print(i)
+                i += 1
+            </code>
+          </pre>
+      </section>
+
+      <section id="practice" class="main-section">
+          <header class="header">practice</header>
+          <p>Simply reading about these topics is not enough.</p>
+          <p>The only way to master programming is to practice.</p>
+          <p>I have listed below a range of platforms where you can practice and to challenge yourself.</p>
+          <p>For example, the following code prints the numbers 0 to 4:</p>
+          <ul>
+            <li class="link practice">
+              <a class="practice-link" href="https://leetcode.com/">Leetcode</a>
+            </li>
+            <li class="link practice">
+              <a class="practice-link" href="https://www.hackerrank.com/">HackerRank</a>
+            </li>
+            <li class="link practice">
+              <a class="practice-link" href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+            </li>
+            <li class="link practice">
+              <a class="practice-link" href="https://www.codewars.com/">CodeWars</a>
+            </li>
+            <li class="link practice">
+              <a class="practice-link" href="https://exercism.org/">Exercism</a>
+            </li>
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>

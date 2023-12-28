@@ -1,0 +1,170 @@
+/* Google Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background: #0a0a23;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+/* Navbar Styles */
+#navbar {
+  float: left;
+  width: 20%;
+  /* border-right: 2px solid #3b3b4f; */
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 40px 0 40px;
+}
+
+#navbar .brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.brand header {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 10px;
+  background: #1b1b32;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#navbar li:hover {
+  background: #3b3b4f;
+}
+
+.nav-link,
+.practice-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-link span {
+  text-transform: none;
+}
+
+/* Main Section Styles */
+#main-doc {
+  float: right;
+  width: 80%;
+  padding: 50px 100px 50px 50px;
+}
+
+/* Intro Section */
+section header {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 25px;
+  width: 100%;
+  background: #3b3b4f;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 20px 0;
+}
+
+/* Paragraphs */
+p {
+  font-size: 20px;
+  margin: 5px 0;
+  text-align: justify;
+}
+
+p span {
+  font-weight: 800;
+}
+
+p a {
+  color: white;
+}
+
+.ptag {
+  font-weight: 800;
+}
+
+.quote {
+  padding-left: 40px;
+  font-family: 'Righteous', sans-serif;
+  font-style: italic;
+  margin: 20px 0;
+  background: #1b1b32;
+  border-radius: 5px;
+  border-left: 10px solid 3b3b4f;
+  padding: 10px 10px 10px 40px;
+}
+
+#intro ol {
+  margin: 20px 0;
+  padding: 10px 40px;
+}
+
+code {
+  font-family: 'Inconsolata', sans-serif;
+  color: red;
+}
+
+.block {
+  color: white;
+  text-align: center;
+}
+
+pre {
+  background: #1b1b32;
+  color: #000;
+  margin: 20px auto;
+  padding: 0;
+  border-radius: 5px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.practice {
+  width: 25%;
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  #main-doc {
+    width: 100%;
+    padding: 20px 40px;
+  }
+}
