@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a23;
+    color: white;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #1b1b32;
+}
+
+#header-img {
+    width: 20%;
+}
+
+#nav-bar {
+    position: fixed;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-desc {
+    padding: 40px;
+}
+
+h1 span {
+    color: #002ead;
+    font-weight: bolder !important;
+}
+
+#email {
+    width: 60%;
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+#submit {
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+    background: #002ead;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bolder !important;
+}
+
+#submit:hover {
+    color: #002ead;
+    background: white;
+}
+
+.about-video {
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+#testimonials {
+    background: #1b1b32;
+    display: flex;
+    margin: 20px auto;
+}
+
+.testimonial {
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-img {
+    width: 40%;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.testimonial .name {
+    color: #4d3800;
+}
+
+.testimonial .title {
+    color: #f1be32;
+}
+
+.testimonial .text {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-desc {
+        text-align: center;
+    }
+}
+
+@media (max-width: 390px) {
+    #header-img {
+        width: 10%;
+    }
+
+    #about {
+        height: 70vh;
+    }
+    
+    iframe {
+        height: 200px;
+        width: 300px;
+    }
+
+    #testimonials {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .testimonial-img {
+        width: 70%;
+        border: 5px solid white;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        height: 80vh;
+    }
+}
