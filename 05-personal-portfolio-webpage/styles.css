@@ -1,0 +1,411 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+  background-color: #0a0a23;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  line-height: 1.8;
+}
+
+#about,
+#projects,
+#contact {
+  margin: 100px 0;
+}
+
+#navbar,
+#welcome-section,
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 11px 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 20px;
+  color: #0a0a23;
+  font-family: "Roboto Light", sans-serif;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline overline dotted white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Header */
+#header {
+    background: url("./assets/header-background.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#header:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient( 90deg, rgba(10, 10, 35, .9) 0%, rgba(27, 27, 50, .9) 100%);
+  z-index: -1;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.navbar-brand {
+  width: 10%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+.nav-link {
+  list-style-type: none;
+}
+
+.nav-link a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: "Roboto Light", sans-serif;
+  color: white;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome Section */
+.header-content {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 140px;
+}
+
+.header-greetings,
+.header-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.header-greetings {
+  font-family: "Roboto Light", sans-serif;
+}
+
+.header-title {
+  margin-top: 0;
+}
+
+.header-subtitle li {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Roboto Light", sans-serif;
+  color: #d0d0d5;
+}
+
+.header-subtitle .padding {
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+.header-button {
+  margin-top: 30px;
+}
+
+.header-button:hover {
+  background-color: #0a0a23;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+
+.social-icons ul {
+  display: flex;
+}
+
+.social {
+  list-style-type: none;
+}
+
+.social a {
+  margin-left: 15px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  color: white;
+}
+
+.fa-brands:hover {
+  scale: 1.5;
+}
+
+/* About Section */
+#about {
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  width: 25%;
+  height: 25%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.about-content {
+  padding: 0 40px;
+}
+
+.about-text {
+  font-family: "Roboto Light", sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  font-style: italic;
+  padding-bottom: 25px;
+  border-bottom: 2px #3b3b4f dashed;
+}
+
+.blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+.block {
+  text-align: left;
+}
+
+h3 {
+  font-family: "Roboto Light", sans-serif;
+}
+
+h3 span {
+  font-weight: bold;
+  color: #4d3800;
+}
+
+.block-btn {
+  margin-top: 25px;
+}
+
+/* Portfolio Section */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  grid-template: 450px 450px / 450px 450px;
+  gap: 20px;
+}
+
+.project-img {
+  border: 5px solid white;
+  border-radius: 15px;
+  width: 450px;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+}
+
+.links .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.links .btn i {
+  padding-right: 5px;
+}
+
+.links .btn .fa-brands {
+  color: #0a0a23;
+}
+
+/* Contact Section */
+.contact-infos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-infos li {
+  list-style-type: none;
+}
+
+.contact-infos li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Roboto Light", sans-serif;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons ul {
+  display: flex;
+}
+
+footer p {
+  margin-top: 10px;
+  font-family: "Roboto Light", sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 390px) {
+  .nav-link a {
+    font-size: 15px;
+  }
+
+  .navbar-brand {
+    width: 30%;
+  }
+
+  .header-greetings,
+  .header-title {
+    font-size: 40px;
+  }
+
+  .social-icons {
+    margin-top: -50px;
+    justify-content: center;
+  }
+
+  .fa-brands {
+    font-size: 20px;
+  }
+
+  .header-button {
+    font-size: 15px;
+  }
+
+  .header-content {
+    margin-top: -150px;
+  }
+
+  .blocks {
+    flex-direction: column;
+  }
+
+  .block {
+    text-align: center;
+  }
+
+  .block-btn {
+    margin: 20px auto;
+  }
+
+  .project-img {
+    width: 300px;
+  }
+
+  .contact-infos li a {
+    font-size: 20px;
+}
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .profile {
+    margin-bottom: 25px;
+  }
+
+  .about-content {
+    padding: 0 10px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-tile {
+    margin-bottom: 20px;
+  }
+
+  .contact-infos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
