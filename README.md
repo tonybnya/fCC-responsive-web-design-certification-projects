@@ -6,3 +6,4 @@ Set of projects required to tackle some freeCodeCamp certifications.
 - [x] Build a Tribute Page
 - [x] Technical Documentation Page
 - [x] Product Landing Page
+- [x] Personal Portfolio Webpage
